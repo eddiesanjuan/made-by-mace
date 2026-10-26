@@ -1,0 +1,215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"></head><body>
+<title>MACE Enquiry Trial</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{--paper:#FFFFFF;--ink:#1E1B19;--muted:#6E655E;--sand:#F6EEE4;--line:#E4DCD3;color-scheme:light}
+body{background:var(--paper);color:var(--ink);margin:0}
+.trial-wrap{max-width:640px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px;font-family:"Poppins","Helvetica Neue",Arial,sans-serif;font-weight:300}
+.trial-logo{text-align:center;font-family:"Libre Baskerville",Georgia,serif;font-size:32px;letter-spacing:.32em;margin-left:.32em}
+.trial-note{background:var(--sand);padding:10px 14px;font-size:13px;color:var(--muted)}
+#trialReceipt{border:1px solid var(--line);background:var(--sand);padding:18px}
+#trialReceipt h3{margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+#trialReceipt pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:13.5px}
+</style>
+<div class="trial-wrap">
+<div class="trial-logo">MACE</div>
+<div class="trial-note">Trial run. This is the exact form for your Enquire page. Fill it out like a client would. Nothing is sent from this trial; after you press Send you'll see the email you would receive.</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300;400;500&display=swap">
+<style>
+#mace-enquiry { --ink:#1E1B19; --muted:#6E655E; --line:#E4DCD3; --blush:#F1E1E4; --rose:#B8707D; --paper:#FFFFFF;
+  font-family:"Poppins","Helvetica Neue",Arial,sans-serif; font-weight:300; font-size:15px; line-height:1.6; color:var(--ink);
+  max-width:640px; margin:0 auto; text-align:left; }
+#mace-enquiry * { box-sizing:border-box; }
+#mace-enquiry [hidden] { display:none !important; }
+#mace-enquiry label, #mace-enquiry p, #mace-enquiry input, #mace-enquiry select, #mace-enquiry textarea, #mace-enquiry div { text-transform:none; letter-spacing:normal; }
+#mace-enquiry .me-card { border:1px solid var(--line); background:var(--paper); padding:26px clamp(16px,5vw,34px); display:grid; gap:22px; }
+#mace-enquiry .me-steps { display:flex; gap:8px; align-items:center; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); flex-wrap:wrap; }
+#mace-enquiry .me-steps span.on { color:var(--ink); font-weight:500; }
+#mace-enquiry .me-steps i { width:18px; height:1px; background:var(--line); display:inline-block; }
+#mace-enquiry h2 { font-family:"Libre Baskerville",Baskerville,Georgia,serif; font-weight:400; font-size:22px; line-height:1.3; margin:0; letter-spacing:0; text-transform:none; color:var(--ink); }
+#mace-enquiry .me-pane { display:grid; gap:22px; }
+#mace-enquiry .me-q { display:grid; gap:10px; }
+#mace-enquiry .me-lbl { font-weight:500; font-size:14px; margin:0; }
+#mace-enquiry .me-hint { font-size:12.5px; color:var(--muted); margin-top:-6px; }
+#mace-enquiry .me-chips { display:flex; flex-wrap:wrap; gap:8px; }
+#mace-enquiry .me-chips input { position:absolute; opacity:0; pointer-events:none; width:1px; height:1px; }
+#mace-enquiry .me-chips label { border:1px solid var(--line); padding:9px 14px; font-size:13.5px; cursor:pointer; background:var(--paper); margin:0; }
+#mace-enquiry .me-chips input:checked + label { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+#mace-enquiry .me-chips input:focus-visible + label, #mace-enquiry button:focus-visible, #mace-enquiry input:focus-visible, #mace-enquiry textarea:focus-visible, #mace-enquiry select:focus-visible { outline:2px solid var(--rose); outline-offset:2px; }
+#mace-enquiry input[type=text], #mace-enquiry input[type=email], #mace-enquiry input[type=tel], #mace-enquiry input[type=date], #mace-enquiry select, #mace-enquiry textarea {
+  width:100%; font:inherit; font-weight:300; color:var(--ink); background:var(--paper); border:0; border-bottom:1px solid var(--muted); padding:10px 2px; border-radius:0; margin:0; box-shadow:none; }
+#mace-enquiry textarea { border:1px solid var(--line); padding:10px; min-height:92px; resize:vertical; }
+#mace-enquiry .me-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+#mace-enquiry .me-row > * { min-width:0; }
+@media (max-width:520px) { #mace-enquiry .me-row { grid-template-columns:1fr; } }
+#mace-enquiry .me-check { display:flex; gap:8px; align-items:center; font-size:13.5px; margin:0; }
+#mace-enquiry .me-avail { background:var(--blush); padding:10px 14px; font-size:13px; }
+#mace-enquiry .me-actions { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center; }
+#mace-enquiry .me-btn { font-family:inherit; font-weight:500; font-size:14px; letter-spacing:.16em; text-transform:uppercase; background:var(--ink); color:var(--paper); border:0; padding:16px 34px; cursor:pointer; border-radius:0; margin-left:auto; }
+#mace-enquiry .me-btn:hover { background:var(--rose); }
+#mace-enquiry .me-btn[disabled] { opacity:.6; cursor:wait; }
+#mace-enquiry .me-btn.back { background:transparent; color:var(--ink); border:1px solid var(--ink); margin-left:0; }
+#mace-enquiry .me-err { color:#9B2C2C; font-size:13px; min-height:1em; }
+#mace-enquiry .me-small { font-size:12.5px; color:var(--muted); }
+#mace-enquiry .me-done { text-align:center; display:grid; gap:12px; padding:40px 10px; }
+#mace-enquiry .me-done h2 { font-size:26px; }
+#mace-enquiry .me-honey { position:absolute; left:-9999px; }
+</style>
+
+<div id="mace-enquiry">
+  <form class="me-card" id="meForm" novalidate>
+    <div class="me-steps" aria-label="Progress"><span data-s="1">The event</span><i></i><span data-s="2">The details</span><i></i><span data-s="3">About you</span></div>
+
+    <div class="me-pane" data-pane="1">
+      <h2>What are we celebrating?</h2>
+      <div class="me-q"><p class="me-lbl" id="meTypeLbl">Type of event</p><div class="me-chips" role="radiogroup" aria-labelledby="meTypeLbl" data-name="type"></div></div>
+      <div class="me-q">
+        <label class="me-lbl" for="meDate">Event date</label>
+        <input type="date" id="meDate">
+        <label class="me-check"><input type="checkbox" id="meFlex"> My date is flexible, or not set yet</label>
+        <div class="me-avail" id="meAvail" hidden></div>
+      </div>
+      <div class="me-row">
+        <div class="me-q"><label class="me-lbl" for="meWhere">Venue or town</label><input type="text" id="meWhere" placeholder="Alys Beach, Rosemary Beach, Seaside, private venue"></div>
+        <div class="me-q"><label class="me-lbl" for="meTime">Rough event time</label><select id="meTime"><option value="">Choose one</option><option>Daytime</option><option>Evening</option><option>Not sure yet</option></select></div>
+      </div>
+      <div class="me-q"><p class="me-lbl" id="meGuestLbl">Guest count</p><div class="me-chips" role="radiogroup" aria-labelledby="meGuestLbl" data-name="guests"></div></div>
+    </div>
+
+    <div class="me-pane" data-pane="2" hidden>
+      <h2>The painting</h2>
+      <div class="me-q"><p class="me-lbl" id="mePieceLbl">What would you love?</p><div class="me-chips" role="radiogroup" aria-labelledby="mePieceLbl" data-name="piece"></div></div>
+      <div class="me-q">
+        <label class="me-lbl" for="meStory">Tell me a little about the people or the cause behind it</label>
+        <div class="me-hint">Places, colors, a song, a pet. A sentence or two is plenty.</div>
+        <textarea id="meStory"></textarea>
+      </div>
+    </div>
+
+    <div class="me-pane" data-pane="3" hidden>
+      <h2>How do I reach you?</h2>
+      <div class="me-row">
+        <div class="me-q"><label class="me-lbl" for="meName">Your name</label><input type="text" id="meName" autocomplete="name"></div>
+        <div class="me-q"><label class="me-lbl" for="meRole">You are the</label><select id="meRole"><option value="">Choose one</option><option>Host or couple</option><option>Planner</option><option>Family member</option><option>Organizer</option></select></div>
+      </div>
+      <div class="me-row">
+        <div class="me-q"><label class="me-lbl" for="meEmail">Email</label><input type="email" id="meEmail" autocomplete="email"></div>
+        <div class="me-q"><label class="me-lbl" for="mePhone">Phone</label><input type="tel" id="mePhone" autocomplete="tel"></div>
+      </div>
+      <div class="me-q"><p class="me-lbl" id="meContactLbl">Best way to reach you</p><div class="me-chips" role="radiogroup" aria-labelledby="meContactLbl" data-name="contact"></div></div>
+      <div class="me-q">
+        <label class="me-lbl" for="meSource">How did you hear about me?</label>
+        <select id="meSource"><option value="">Choose one</option><option>My planner</option><option>My photographer</option><option>The venue</option><option>Instagram</option><option>A friend</option><option>I saw a painting at an event</option><option>Other</option></select>
+      </div>
+      <input class="me-honey" type="text" id="meHoney" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </div>
+
+    <div class="me-err" id="meErr" role="alert"></div>
+    <div class="me-actions">
+      <button class="me-btn back" type="button" id="meBack" hidden>Back</button>
+      <button class="me-btn" type="submit" id="meNext">Continue</button>
+    </div>
+    <div class="me-small" id="meNote">About one minute. Three short steps.</div>
+  </form>
+
+  <div class="me-done" id="meDone" hidden>
+    <h2 id="meDoneTitle">Thank you.</h2>
+    <p id="meDoneText"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Where enquiries go. FormSubmit emails each one to this address; the very first submission sends Julia Kate a one-time "Activate" email.
+  var SEND_TO = "https://formsubmit.co/ajax/madexmace@gmail.com";
+  var LISTS = {
+    type: ["Wedding","Rehearsal or welcome party","Milestone","Anniversary","Gallery or studio night","Fundraiser or gala","Private dinner or party","Something else"],
+    guests: ["Under 50","50 to 100","100 to 200","200+"],
+    piece: ["Bold and eclectic","Soft pastels","Mixed media and vibrant"],
+    contact: ["Text","Call","Email"]
+  };
+  var root = document.getElementById("mace-enquiry"), form = root.querySelector("#meForm"), err = root.querySelector("#meErr");
+  root.querySelectorAll(".me-chips").forEach(function(box){
+    var n = box.dataset.name;
+    box.innerHTML = LISTS[n].map(function(v,i){ return '<input type="radio" name="me-'+n+'" id="me-'+n+i+'" value="'+v+'"><label for="me-'+n+i+'">'+v+'</label>'; }).join("");
+  });
+  var step = 1;
+  function v(id){ return root.querySelector("#"+id).value.trim(); }
+  function r(n){ var x = root.querySelector('input[name="me-'+n+'"]:checked'); return x ? x.value : ""; }
+  function nice(d){ return d ? new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric",year:"numeric"}) : ""; }
+  function show(){
+    root.querySelectorAll("[data-pane]").forEach(function(p){ p.hidden = +p.dataset.pane !== step; });
+    root.querySelectorAll(".me-steps span").forEach(function(s){ s.classList.toggle("on", +s.dataset.s === step); });
+    root.querySelector("#meBack").hidden = step === 1;
+    root.querySelector("#meNext").textContent = step === 3 ? "Send my enquiry" : "Continue";
+    root.querySelector("#meNote").textContent = ["About one minute. Three short steps.","Two more quick questions.","Last step."][step-1];
+    err.textContent = "";
+  }
+  root.querySelector("#meDate").addEventListener("change", function(){
+    var d = v("meDate"), n = root.querySelector("#meAvail");
+    if(!d){ n.hidden = true; return; }
+    var t = new Date(d+"T12:00:00"), days = Math.round((t - new Date())/864e5), wk = [0,5,6].indexOf(t.getDay()) > -1;
+    var msg = nice(d) + ".";
+    if(days < 0) msg += " That date has passed; check the year.";
+    else if(days < 21) msg += " That's soon. I'll tell you within a day if I can make it work.";
+    else if(wk) msg += " Weekend dates book first, so enquiring early is smart.";
+    else msg += " Weekday events often have more openings.";
+    n.textContent = msg; n.hidden = false;
+  });
+  function check(){
+    if(step === 1){ if(!r("type")) return "Choose the type of event."; if(!v("meDate") && !root.querySelector("#meFlex").checked) return "Add a date, or tick that your date is flexible."; if(!v("meWhere")) return "Add the venue or town."; }
+    if(step === 2){ if(!r("piece")) return "Choose the style you'd love."; }
+    if(step === 3){ if(!v("meName")) return "Add your name."; if(!/^\S+@\S+\.\S+$/.test(v("meEmail"))) return "Add an email I can reply to."; if(v("mePhone").replace(/\D/g,"").length < 10) return "Add a phone number with area code."; }
+    return "";
+  }
+  function top(){ var y = root.getBoundingClientRect().top + window.pageYOffset - 90; if(window.pageYOffset > y) window.scrollTo({top:y, behavior:"smooth"}); }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var m = check(); if(m){ err.textContent = m; return; }
+    if(step < 3){ step++; show(); top(); return; }
+    send();
+  });
+  root.querySelector("#meBack").addEventListener("click", function(){ step--; show(); top(); });
+  function send(){
+    if(v("meHoney")) return;
+    var flex = root.querySelector("#meFlex").checked;
+    var date = v("meDate") ? nice(v("meDate")) + (flex ? " (flexible)" : "") : "Flexible / not set";
+    var data = {
+      "_subject": "New enquiry: " + r("type") + ", " + date,
+      "_template": "table",
+      "_captcha": "false",
+      "_replyto": v("meEmail"),
+      "Date": date,
+      "Event": r("type"),
+      "Where": v("meWhere") + (v("meTime") ? " · " + v("meTime") : ""),
+      "Guests": r("guests") || "not given",
+      "Style": r("piece"),
+      "Story": v("meStory") || "not given",
+      "Name": v("meName"),
+      "Role": v("meRole") || "not given",
+      "Email": v("meEmail"),
+      "Phone": v("mePhone"),
+      "Prefers": r("contact") || "any",
+      "Heard about you from": v("meSource") || "not given"
+    };
+    var btn = root.querySelector("#meNext"); btn.disabled = true; btn.textContent = "Sending...";
+    (function(){ var rows=Object.keys(data).filter(function(k){return k.charAt(0)!=="_";}).map(function(k){return k+": "+data[k];}); var t=document.getElementById("trialReceipt"); t.querySelector("pre").textContent="Subject: "+data._subject+"\n\n"+rows.join("\n"); t.hidden=false; return Promise.resolve({ok:true,json:function(){return Promise.resolve({success:"true"});}}); })()
+      .then(function(res){ return res.json().then(function(j){ if(!res.ok || String(j.success) === "false") throw new Error(j.message || "send failed"); }); })
+      .then(function(){
+        var first = v("meName").split(" ")[0];
+        root.querySelector("#meDoneTitle").textContent = "Thank you, " + first + ".";
+        root.querySelector("#meDoneText").textContent = "Julia Kate will be in touch.";
+        form.hidden = true; root.querySelector("#meDone").hidden = false; top();
+      })
+      .catch(function(){
+        btn.disabled = false; btn.textContent = "Send my enquiry";
+        err.textContent = "That didn't send. Please try again, or email madexmace@gmail.com.";
+      });
+  }
+  show();
+})();
+</script>
+
+<section id="trialReceipt" hidden><h3>The email you would receive</h3><pre></pre></section>
+</div></body></html>
